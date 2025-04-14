@@ -114,9 +114,33 @@ let c = 10; let d = '10';
 // Logical Operators (&&, ||, !)
 // && - logical AND operator - returns true if both operands are true
 
-console.log(c > d && c == d);
+//console.log(c > d && c == d);
 // || - logical OR operator - returns true if at least one operand is true
-console.log(c > d || c == d); 
+//console.log(c > d || c == d); 
 // ! - logical NOT operator - returns true if the operand is false and vice versa
-console.log(!(c > d)); 
+//console.log(!(c > d)); 
+
+// Functions reusable block of code that performs a task
+// syntax - function functionName(parameter1, parameter2,....) {  //code to be executed //return value; (optional) }
+// function declaration
+function greet(name) {
+    return "Hello " + name;
+}
+
+// console.log(greet("Instructor Eddy"));
+
+function funExponent(a,b){
+    return a**b
+}
+
+//console.log(funExponent(2,3)); // 8
+
+function introduce(name, location, profession) {
+    const message = `My name is ${name}, I am from ${location}, and I am a ${profession}.`;
+    return message;
+}
+  
+console.log(introduce("John", "New York", "Software Engineer"));  
+
+
 
